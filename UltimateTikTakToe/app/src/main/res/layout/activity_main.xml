@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".control.MainActivity"
+    android:background="@color/bgColor">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ULTIMATE TIC TAC TOE "
+        android:textSize="@dimen/main_acitity_title"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:id="@+id/textView"
+        android:layout_marginTop="25dp"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView"
+        android:src="@drawable/mainpage"
+        android:layout_marginTop="20dp"/>
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:id="@+id/radioButton1"
+        android:layout_marginTop="30dp"
+        style="@style/difficultyradioButtonStyle"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:onClick="radioClick"
+        android:button="@drawable/custom_radio_button"
+        android:padding="5dp"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/radioButton1"
+        android:layout_centerHorizontal="true"
+        style="@style/difficultyradioButtonStyle"
+        android:onClick="radioClick"
+        android:button="@drawable/custom_radio_button" android:padding="5dp"/>
+</RadioGroup>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:textColor="@color/bgColor"
+        android:text="PLAY"
+        android:textSize="20dp"
+        android:onClick="playButtonClick"/>
+
+</RelativeLayout>

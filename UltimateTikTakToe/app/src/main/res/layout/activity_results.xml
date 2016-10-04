@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bgColor"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="space.samatov.ultimatetiktaktoe.control.ResultsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultsTextView"
+        android:text="RESULTS GO HERE"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:onClick="playAgain"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exitButton"
+        android:text="PLAY AGAIN"
+        android:textSize="20dp"
+        android:id="@+id/playAgainButton"
+        android:background="@android:color/white"
+        android:textColor="@color/bgColor"
+        android:layout_marginBottom="10dp"
+        android:onClick="playAgain"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="exit"
+        android:textSize="20dp"
+        android:id="@+id/exitButton"
+        android:background="@android:color/white"
+        android:textColor="@color/bgColor"
+        android:layout_marginBottom="10dp"
+        android:onClick="exit"/>
+</RelativeLayout>

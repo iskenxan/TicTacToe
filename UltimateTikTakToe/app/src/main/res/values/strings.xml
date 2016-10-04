@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Ultimate Tic Tac Toe</string>
+    <string name="title_activity_results">ResultsActivity</string>
+</resources>
